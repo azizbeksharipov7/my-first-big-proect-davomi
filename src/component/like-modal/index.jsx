@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Button,
   Dialog,
@@ -6,18 +6,26 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
+import LikeItems from "./like-items";
+import { UseMainContext } from "../../context/useMainContext";
  
 export function LikeModal({open, handleModal}) {
+  const {likeItems}=useContext(UseMainContext)
+
   return (
     <>
       
       <Dialog open={open} handler={handleModal}>
         <DialogHeader>Its a likebox</DialogHeader>
         <DialogBody>
-          The key to more success is to have a lot of pillows. Put it this way,
-          it took me twenty five years to get these plants, twenty five years of
-          blood sweat and tears, and I&apos;m never giving up, I&apos;m just
-          getting started. I&apos;m up to something. Fan luv.
+         <div className="flex flex-col gap-4 h-[500px] overflow-y-auto">
+           {
+            likeItems.map(el=>(
+              <LikeItems key={el.id} {...el}/>
+            ))
+           }
+           
+         </div>
         </DialogBody>
         <DialogFooter>
           <Button

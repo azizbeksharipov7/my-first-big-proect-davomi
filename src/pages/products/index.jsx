@@ -4,6 +4,7 @@ import Header from '../../component/header';
 import { Button, Rating } from '@material-tailwind/react';
 import { Icons } from '../../assets/icons';
 import { ProductInfo, ProductView } from '../../component';
+import Product from '../../component/product';
 
 const Products = () => {
   const { id } = useParams();
@@ -39,6 +40,7 @@ const Products = () => {
               </>
             )}
           </div>
+          <Product/>
         </div>
       </section>
     </>

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import { UseMainContextProvider } from './context/useMainContext.jsx';
+import { MainContextProvider } from './context/useMainContext.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UseMainContextProvider>
+    <MainContextProvider>
       <App />
-    </UseMainContextProvider>
+    </MainContextProvider>
   </React.StrictMode>
 );

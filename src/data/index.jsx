@@ -15,17 +15,17 @@ import product_5 from '../assets/image/product-5.png';
 
 export const carouselData = [
   {
-    id: generateId(),
+    id: 5,
     src: 'https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80',
     alt: 'image 1',
   },
   {
-    id: generateId(),
+    id: 6,
     src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80',
     alt: 'image 2',
   },
   {
-    id: generateId(),
+    id: 7,
     src: 'https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80',
     alt: 'image 3',
   },
@@ -33,17 +33,17 @@ export const carouselData = [
 
 export const btns = [
   {
-    id: generateId(),
+    id: 8,
     text: 'Поиск по номеру',
     value: 'номеру',
   },
   {
-    id: generateId(),
+    id: 9,
     text: ' Поиск по марке',
     value: 'марке',
   },
   {
-    id: generateId(),
+    id: 10,
     text: 'Поиск по названию товара',
     value: 'названию товара',
   },
@@ -51,37 +51,37 @@ export const btns = [
 
 export const category = [
   {
-    id: generateId(),
+    id: 11,
     title: 'Квадроциклы',
     image: img_1,
     category: 'quad-bikes',
   },
   {
-    id: generateId(),
+    id: 12,
     title: 'Гидроциклы',
     image: img_2,
     category: 'hydro-cycles',
   },
   {
-    id: generateId(),
+    id: 13,
     title: 'Катера',
     image: img_3,
     category: 'boat',
   },
   {
-    id: generateId(),
+    id: 14,
     title: 'Снегоходы',
     image: img_4,
     category: 'snowbike',
   },
   {
-    id: generateId(),
+    id: 15,
     title: 'Вездеходы',
     image: img_5,
     category: 'off-roads',
   },
   {
-    id: generateId(),
+    id: 16,
     title: 'Двигатели',
     image: img_6,
     category: 'engines',
@@ -145,33 +145,33 @@ export const tabsData = [
 
 export const productsData = [
   {
-    id: generateId(),
+    id: 0,
     image: product_1,
     title: 'Водонепроницаемый Рюкзак',
-    price: '9 800 ₽',
+    price: 9800 ,
   },
   {
-    id: generateId(),
+    id: 1,
     image: product_2,
     title: "Спасательный жилет BRP Men's Airflow PFD",
-    price: '6 900 ₽',
+    price: 6900,
   },
   {
-    id: generateId(),
+    id: 2,
     image: product_3,
     title: 'BRP Audio-Premium System',
-    price: '68 000 ₽',
+    price: 68000 ,
   },
   {
-    id: generateId(),
+    id: 3,
     image: product_4,
     title: 'Спасательное снаряжение',
-    price: 'нет в наличии',
+    price: 1800,
   },
   {
-    id: generateId(),
+    id: 4,
     image: product_5,
     title: 'BRP Audio-портативная система',
-    price: 'нет в наличии',
+    price: 1000,
   },
 ];

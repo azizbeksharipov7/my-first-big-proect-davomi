@@ -10,8 +10,9 @@ import {
   TabsHeader,
 } from '@material-tailwind/react';
 import { tabsData } from '../../data';
+import Products from '../../component/product';
 
-const ProductInfo = ({ title, setLiked, liked }) => {
+const ProductInfo = ({ title, setLiked, liked,like, data }) => {
   const [activeTab, setActiveTab] = React.useState('Характеристики');
 
   return (
@@ -26,7 +27,7 @@ const ProductInfo = ({ title, setLiked, liked }) => {
           variant="text"
           className="px-2"
           onClick={() => setLiked(!liked)}>
-          <Icons.likeIcon color={liked && 'red'} />
+          <Icons.likeIcon onClick={()=>(like ? REMOVE_FROM_LIKE(data.id):addToLike(data))} color={liked && 'red'} />
         </Button>
         <Rating
           value={4}
@@ -68,6 +69,7 @@ const ProductInfo = ({ title, setLiked, liked }) => {
         Показать еще
       </span>
       <Button className='bg-primary uppercase mt-5 rounded py-4 px-14'>купить</Button>
+      
     </div>
   );
 };

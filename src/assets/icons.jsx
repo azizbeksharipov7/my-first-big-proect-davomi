@@ -203,4 +203,54 @@ export const Icons = {
       </g>
     </svg>
   ),
+  deleteIcon: (props) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      fill="none"
+      {...props}
+    >
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" fillOpacity={0} d="M0 0h24v24H0z" />
+        </clipPath>
+      </defs>
+      <path fill="none" d="M0 0h24v24H0z" />
+      <g
+        stroke="#4295E4"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        clipPath="url(#a)"
+      >
+        <path d="m20 6-1.58 14.22A2.001 2.001 0 0 1 16.432 22H7.568a1.996 1.996 0 0 1-1.988-1.78L4 6h16ZM8.082 2.31c.32-.202.693-.31 1.072-.31h5.692a2.003 2.003 0 0 1 1.81 1.147L18 6H6l1.346-2.853c.16-.343.418-.633.736-.836Z" />
+        <path strokeLinecap="round" d="M2 6h20M10 11v5M14 11v5" />
+      </g>
+    </svg>
+  ),
+  addIcon: (props) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      fill="none"
+      {...props}
+    >
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" fillOpacity={0} d="M0 0h24v24H0z" />
+        </clipPath>
+      </defs>
+      <path fill="none" d="M0 0h24v24H0z" />
+      <g clipPath="url(#a)">
+        <path
+          stroke="#4295E4"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 12v8V4v8m0 0h8-8m0 0H4"
+        />
+      </g>
+    </svg>
+  )
+
 };
