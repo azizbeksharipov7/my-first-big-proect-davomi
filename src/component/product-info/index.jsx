@@ -27,7 +27,7 @@ const ProductInfo = ({ title, setLiked, liked,like, data }) => {
           variant="text"
           className="px-2"
           onClick={() => setLiked(!liked)}>
-          <Icons.likeIcon onClick={()=>(like ? REMOVE_FROM_LIKE(data.id):addToLike(data))} color={liked && 'red'} />
+          <Icons.likeIcon onClick={()=>(like ? removeFromLike(data.id):addToLike(data))} color={liked && 'red'} />
         </Button>
         <Rating
           value={4}

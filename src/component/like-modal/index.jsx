@@ -29,16 +29,14 @@ export function LikeModal({open, handleModal}) {
         </DialogBody>
         <DialogFooter>
           <Button
-            variant="text"
-            color="red"
+            variant="gradient"
+            color="green"
             onClick={handleModal}
             className="mr-1"
           >
             <span>Cancel</span>
           </Button>
-          <Button variant="gradient" color="green" onClick={handleModal}>
-            <span>Confirm</span>
-          </Button>
+          
         </DialogFooter>
       </Dialog>
     </>
